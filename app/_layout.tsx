@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect } from 'react';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
@@ -39,7 +40,9 @@ export default function RootLayout() {
     <>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="onboarding" />
-        <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="friends" />
+        <Stack.Screen name="cafe" />
+        <Stack.Screen name="record" />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="dark" />

@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView, SafeAreaView, TouchableOpacity, Image } from 'react-native';
-import { Colors } from '@/constants/Colors';
+import { View, Text, StyleSheet, ScrollView, SafeAreaView, TouchableOpacity } from 'react-native';
 import { Button } from '@/components/ui/Button';
 import { Avatar } from '@/components/ui/Avatar';
 import { router } from 'expo-router';
 
-// Update mockFriends with DiceBear avatars
+// Update mockFriends with local placeholder image
 const mockFriends = [
   {
     id: '1',
     name: 'Team',
-    avatarUrl: 'assets/images/team.png',
+    avatarUrl: require('../assets/images/team.png'),
   },
   {
     id: '2',
     name: 'Tun',
-    avatarUrl: 'assets/images/tun.png',
+    avatarUrl: require('../assets/images/tun.png'),
   },
   {
     id: '3',
     name: 'Kris',
-    avatarUrl: 'assets/images/kris.png',
+    avatarUrl: require('../assets/images/kris.png'),
   },
 ];
 
@@ -142,4 +141,4 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'Inter-Bold',
   },
-});
+}); 

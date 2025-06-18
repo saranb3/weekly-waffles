@@ -86,19 +86,19 @@ export const DEFAULT_PROMPTS: Omit<Prompt, 'id' | 'createdAt'>[] = [
     preview: 'Unexpected human goodness'
   },
 
-  // Deep Thought
+  // Deep 
   {
-    category: 'DeepThought',
+    category: 'Deep Thought',
     text: 'What belief about life have you completely changed your mind about?',
     preview: 'Evolving life philosophy'
   },
   {
-    category: 'DeepThought',
+    category: 'Deep Thought',
     text: 'If you could know the absolute truth about one thing, what would you choose?',
     preview: 'Ultimate truth seeking'
   },
   {
-    category: 'DeepThought',
+    category: 'Deep Thought',
     text: 'What do you think your purpose is, and how has that evolved?',
     preview: 'Life purpose and meaning'
   }
