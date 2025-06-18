@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, Image, Text, StyleSheet } from 'react-native';
+import { View, Image, Text, StyleSheet, ImageSourcePropType } from 'react-native';
 import { Colors } from '@/constants/Colors';
 
 interface AvatarProps {
-  source?: string;
+  source?: ImageSourcePropType;
   name?: string;
   size?: number;
   style?: any;
@@ -24,7 +24,7 @@ export function Avatar({ source, name, size = 40, style }: AvatarProps) {
   if (source) {
     return (
       <Image
-        source={{ uri: source }}
+        source={source}
         style={containerStyle}
         resizeMode="cover"
       />

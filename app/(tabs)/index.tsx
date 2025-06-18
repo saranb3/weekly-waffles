@@ -10,17 +10,17 @@ const mockFriends = [
   {
     id: '1',
     name: 'Team',
-    avatarUrl: 'assets/images/team.png',
+    avatarUrl: require('../../assets/images/team.png'),
   },
   {
     id: '2',
     name: 'Tun',
-    avatarUrl: 'assets/images/tun.png',
+    avatarUrl: require('../../assets/images/tun.png'),
   },
   {
     id: '3',
     name: 'Kris',
-    avatarUrl: 'assets/images/kris.png',
+    avatarUrl: require('../../assets/images/kris.png'),
   },
 ];
 
